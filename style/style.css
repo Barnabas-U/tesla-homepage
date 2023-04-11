@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* scrolling area*/
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+#section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#section {
+    object-fit: cover;
+}
+
+/* nav bar area */
+.nav-bar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3em;
+    
+}
+
+#logo {
+    margin-left: 3em;
+    width: 6em;
+    cursor: pointer;
+}
+
+.menu1 > ul {
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu1 > ul > li {
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border-radius: 0.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.menu3 {
+    display: none;
+}
+
+.menu1 > ul > li:hover {
+    background-color: rgba(5, 5, 5, 0.07);
+}
+
+#side-menu {
+    cursor: pointer;
+}
+
+/* secondary nav bar */
+
+#x-button {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    width: 2em;
+    padding: 0.3em;
+}
+
+#x-div {
+    position:sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 5em;
+    cursor: pointer;
+}
+
+#x-button:hover {
+    background-color: rgba(5, 5, 5, 0.07);
+}
+
+.menu2 {
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 18em;
+}
+
+.menu2 > ul > li {
+    width: 90%;
+    padding: 0.3em;
+    font-weight: 600;
+    color:	rgb(54, 69, 79);
+    margin-bottom: 0.7em;
+    border-radius: 0.25em;
+}
+
+.menu2 > ul > li:hover {
+    background-color: rgba(5, 5, 5, 0.07);
+}
+
+
+/* main content */
+.main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5em;
+    /*background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100vw, 100vh;
+    height: 100vh;*/
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 5em;
+    color: rgb(27, 18, 18);
+}
+
+.details > h1 {
+    margin: 0;
+    font-size:3em;
+    font-weight: 500
+}
+
+.details > h4 {
+    margin: 1em;
+    font-size:larger;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'Figtree', sans-serif;
+    letter-spacing: 0.1em;
+    margin: 1em;
+    width: 20em;
+    height: 3em;
+    border: none;
+    border-radius: 0.5em;
+    font-size:0.9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+#ivent {
+    padding-bottom: 0.1em;
+    border-bottom: 0.1em solid;
+}
+
+.btn1 {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+}
+
+.model-3 {
+    background-image: url(images/Model-3-Desktop-LHD.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100vw, 100vh;
+    height: 100vh;
+}
+
+.model-y {
+    background-image: url(images/Model-Y-Global-Desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 102vh;
+}
+
+.model-s {
+    background-image: url(images/Model-S-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 104vh;
+}
+
+.model-x {
+    background-image: url(images/Model-X-Desktop-LHD.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 105vh;
+}
+
+.solar-panels {
+    background-image: url(images/SolarPanels-D.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 105vh;
+
+
+}
+
+.solar-roofs {
+    background-image: url(images/SolarRoof-Desktop-Global.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 105vh;
+}
+
+.accessories {
+    background-image: url(images/tesla-accessories.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100vw, 100vh;
+    height: 100vh;
+}
+
+.button1 {
+    margin-top: 25em;
+}
+
+.footer > ul {
+    font-size: small;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul1 > li {
+    margin: 1em;
+}
+
+.ul2 {
+    display: none;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.start-scrolling {
+    height: inherit;
+    overflow: scroll;
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    body {
+        width: 100%;
+    }
+    /* nav bar area */
+.nav-bar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3em;
+    
+}
+
+#logo {
+    margin-left: 3em;
+    width: 6em;
+    cursor: pointer;
+}
+
+.menu1 > ul {
+    margin-right: 1em;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu1 > ul > li {
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border-radius: 0.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+/* mobile menu */
+.menu3 {
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 100%;
+}
+
+#side-menu2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5em;
+    font-size: small;
+    margin-left: 6em;
+}
+
+#x-button2 {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    width: 2em;
+    padding: 0.3em;
+}
+
+#x-div2 {
+    position:sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 5em;
+    cursor: pointer;
+}
+
+#x-button2:hover {
+    background-color: rgba(5, 5, 5, 0.07);
+}
+
+.menu3-li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 2em;
+    font-size: large;
+    color: gray;
+}
+
+.menu3-li > a {
+    margin-bottom: 0.5em;
+}
+
+
+/* main content */
+.main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5em;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 5em;
+    width: 100vw;
+    color: rgb(27, 18, 18);
+}
+
+.details > h1 {
+    margin: 0;
+    font-size:3em;
+    font-weight: 500
+}
+
+.details > h4 {
+    margin: 1em;
+    font-size:medium;
+    font-weight: 400;
+}
+
+.buttons {
+    margin-top: 26em;
+}
+
+button {
+    font-family: 'Figtree', sans-serif;
+    letter-spacing: 0.1em;
+    margin: 0.5em;
+    width: 85vw;
+    height: 3em;
+    border: none;
+    border-radius: 0.3em;
+    font-size:0.9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+#ivent {
+    padding-bottom: 0.1em;
+    border-bottom: 0.1em solid;
+}
+
+.btn1 {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn2 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.model-3 {
+    background-image: url(images/Model-3-Desktop-LHD.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.model-y {
+    background-image: url(images/Model-Y-Global-Desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.model-s {
+    background-image: url(images/Model-S-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.model-x {
+    background-image: url(images/Model-X-Desktop-LHD.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.solar-panels {
+    background-image: url(images/SolarPanels-D.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.solar-roofs {
+    background-image: url(images/SolarRoof-Desktop-Global.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.accessories {
+    background-image: url(images/tesla-accessories.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.button1 {
+    margin-top: 23em;
+}
+
+.footer > ul {
+    margin-top: unset;
+    display: flex;
+}
+
+.ul1 > li {
+    display: none;
+}
+
+.ul2 {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul2 > a {
+    margin: 0.5em;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.start-scrolling {
+    height: inherit;
+    overflow: scroll;
+}
+}
